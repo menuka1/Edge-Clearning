@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edge Cleaning Facility Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">
+        <img src="/WhatsApp Image 2026-06-24 at 5.02.02 PM.jpeg" alt="Edge Cleaning Facility Services" />
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#why-us" class="nav__link">Why Us</a>
+        <a href="#process" class="nav__link">How It Works</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#contact" class="btn btn--sm">Get a Quote</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__content">
+      <span class="hero__badge">Professional Cleaning Services</span>
+      <h1 class="hero__title">Spotless Spaces,<br><span>Every Time.</span></h1>
+      <p class="hero__sub">Edge Cleaning Facility Services delivers reliable, thorough cleaning for homes, offices, and commercial spaces across the region.</p>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--primary btn--lg">Book a Clean</a>
+        <a href="#services" class="btn btn--outline btn--lg">Our Services</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><strong>500+</strong><span>Happy Clients</span></div>
+        <div class="stat"><strong>5★</strong><span>Average Rating</span></div>
+        <div class="stat"><strong>8+</strong><span>Years Experience</span></div>
+      </div>
+    </div>
+    <div class="hero__image">
+      <img src="https://images.pexels.com/photos/4099354/pexels-photo-4099354.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Professional cleaning" />
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__label">What We Offer</span>
+        <h2 class="section__title">Our Cleaning Services</h2>
+        <p class="section__sub">Comprehensive cleaning solutions tailored to your needs — from regular home cleans to full commercial contracts.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="tabs" id="tabs">
+        <button class="tab tab--active" data-filter="all">All Services</button>
+        <button class="tab" data-filter="residential">Residential</button>
+        <button class="tab" data-filter="deep">Deep Cleaning</button>
+        <button class="tab" data-filter="lease">End of Lease</button>
+        <button class="tab" data-filter="kitchen">Kitchen</button>
+        <button class="tab" data-filter="bathroom">Bathroom</button>
+        <button class="tab" data-filter="living">Bedroom & Living</button>
+        <button class="tab" data-filter="additional">Additional</button>
+        <button class="tab" data-filter="commercial">Commercial</button>
+      </div>
+
+      <div class="services-grid" id="services-grid">
+
+        <div class="service-card" data-category="residential">
+          <div class="service-card__icon">🏠</div>
+          <h3>Residential Cleaning</h3>
+          <ul>
+            <li>Regular Weekly Cleaning</li>
+            <li>Fortnightly Cleaning</li>
+            <li>Monthly Cleaning</li>
+            <li>Once-Off Cleaning</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Book Now</a>
+        </div>
+
+        <div class="service-card" data-category="deep">
+          <div class="service-card__icon">✨</div>
+          <h3>Deep Cleaning</h3>
+          <ul>
+            <li>Spring Cleaning</li>
+            <li>Detailed Deep Cleaning</li>
+            <li>Full House Refresh</li>
+            <li>High-Touch Area Sanitising</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Book Now</a>
+        </div>
+
+        <div class="service-card" data-category="lease">
+          <div class="service-card__icon">🔑</div>
+          <h3>End of Lease Cleaning</h3>
+          <ul>
+            <li>Bond Cleaning</li>
+            <li>Move In / Move Out Cleaning</li>
+            <li>Oven Cleaning</li>
+            <li>Wall Spot Cleaning</li>
+            <li>Window & Window Track Cleaning</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Book Now</a>
+        </div>
+
+        <div class="service-card" data-category="kitchen">
+          <div class="service-card__icon">🍳</div>
+          <h3>Kitchen Cleaning</h3>
+          <ul>
+            <li>Bench & Surface Cleaning</li>
+            <li>Stove & Rangehood Cleaning</li>
+            <li>Sink & Tap Polishing</li>
+            <li>Cupboard Exterior Cleaning</li>
+            <li>Microwave Cleaning</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Book Now</a>
+        </div>
+
+        <div class="service-card" data-category="bathroom">
+          <div class="service-card__icon">🚿</div>
+          <h3>Bathroom Cleaning</h3>
+          <ul>
+            <li>Shower & Glass Cleaning</li>
+            <li>Toilet Sanitising</li>
+            <li>Tile & Grout Cleaning</li>
+            <li>Mirror Cleaning</li>
+            <li>Basin & Vanity Cleaning</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Book Now</a>
+        </div>
+
+        <div class="service-card" data-category="living">
+          <div class="service-card__icon">🛋️</div>
+          <h3>Bedroom & Living Areas</h3>
+          <ul>
+            <li>Dusting All Surfaces</li>
+            <li>Vacuuming</li>
+            <li>Mopping</li>
+            <li>Skirting Board Cleaning</li>
+            <li>Cobweb Removal</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Book Now</a>
+        </div>
+
+        <div class="service-card" data-category="additional">
+          <div class="service-card__icon">➕</div>
+          <h3>Additional Services</h3>
+          <ul>
+            <li>Inside Fridge Cleaning</li>
+            <li>Inside Oven Cleaning</li>
+            <li>Balcony Cleaning</li>
+            <li>Garage Tidying</li>
+            <li>Steam Cleaning</li>
+            <li>Airbnb Cleaning</li>
+            <li>Inspection Cleaning</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Book Now</a>
+        </div>
+
+        <div class="service-card" data-category="commercial">
+          <div class="service-card__icon">🏢</div>
+          <h3>Commercial Cleaning</h3>
+          <ul>
+            <li>Office Cleaning</li>
+            <li>Retail Store Cleaning</li>
+            <li>Common Area Cleaning</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Book Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section section--alt" id="why-us">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__label">Why Choose Us</span>
+        <h2 class="section__title">The Edge Difference</h2>
+        <p class="section__sub">We go beyond surface level — delivering a genuinely clean, healthy environment every visit.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature__icon">🛡️</div>
+          <h3>Fully Insured</h3>
+          <p>All our cleaners are insured and background-checked for your peace of mind.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🌿</div>
+          <h3>Eco-Friendly Products</h3>
+          <p>We use non-toxic, environmentally safe cleaning products that are safe for kids and pets.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">⏰</div>
+          <h3>Reliable & On Time</h3>
+          <p>We show up when we say we will and complete every job to the highest standard.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">💯</div>
+          <h3>Satisfaction Guaranteed</h3>
+          <p>Not happy? We'll come back and re-clean at no extra cost — no questions asked.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">📋</div>
+          <h3>Detailed Checklists</h3>
+          <p>Every clean follows a thorough checklist so nothing is ever missed.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">💬</div>
+          <h3>Easy Communication</h3>
+          <p>Book, reschedule, or ask questions easily via phone, email, or online form.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__label">Simple Process</span>
+        <h2 class="section__title">How It Works</h2>
+        <p class="section__sub">Getting your space professionally cleaned is quick and hassle-free.</p>
+      </div>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step__num">01</div>
+          <h3>Get a Quote</h3>
+          <p>Fill out our quick form or call us to get a free, no-obligation quote tailored to your needs.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <h3>Schedule a Clean</h3>
+          <p>Choose a date and time that suits you. We work around your schedule, including weekends.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <h3>We Clean</h3>
+          <p>Our professional team arrives fully equipped and completes the job to our high standards.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">04</div>
+          <h3>Enjoy the Result</h3>
+          <p>Come home to a spotless space. Rate us and rebook — it's that easy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY STRIP -->
+  <section class="gallery-strip">
+    <img src="https://images.pexels.com/photos/4099354/pexels-photo-4099354.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cleaning service" />
+    <img src="https://images.pexels.com/photos/6195121/pexels-photo-6195121.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cleaning service" />
+    <img src="https://images.pexels.com/photos/4108715/pexels-photo-4108715.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cleaning service" />
+    <img src="https://images.pexels.com/photos/6195120/pexels-photo-6195120.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cleaning service" />
+    <img src="https://images.pexels.com/photos/4098352/pexels-photo-4098352.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cleaning service" />
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__label">Testimonials</span>
+        <h2 class="section__title">What Our Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p>"The team did an incredible job on our end-of-lease clean. Got our full bond back without any issues. Highly recommend!"</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">SL</div>
+            <div><strong>Sarah L.</strong><span>End of Lease Clean</span></div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p>"Edge Cleaning has been maintaining our office for 6 months now. Always on time, thorough, and professional. Couldn't ask for more."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">MK</div>
+            <div><strong>Michael K.</strong><span>Commercial Clean</span></div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p>"Had a deep clean done before moving in. The place was spotless — even the oven looked brand new. Amazing attention to detail!"</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">JR</div>
+            <div><strong>Jessica R.</strong><span>Deep Clean</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__label">Contact Us</span>
+        <h2 class="section__title">Get a Free Quote</h2>
+        <p class="section__sub">Tell us about your space and we'll get back to you with a tailored quote within 24 hours.</p>
+      </div>
+      <div class="contact-wrap">
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+61 4XX XXX XXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Service Type</label>
+              <select id="service" required>
+                <option value="">Select a service...</option>
+                <option>Residential Cleaning</option>
+                <option>Deep Cleaning</option>
+                <option>End of Lease Cleaning</option>
+                <option>Kitchen Cleaning</option>
+                <option>Bathroom Cleaning</option>
+                <option>Bedroom & Living Areas</option>
+                <option>Additional Services</option>
+                <option>Commercial Cleaning</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Additional Details</label>
+            <textarea id="message" rows="4" placeholder="Tell us about your property size, specific areas, or any special requirements..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Request</button>
+          <div class="form-success" id="form-success">
+            Thanks! We'll be in touch within 24 hours.
+          </div>
+        </form>
+        <div class="contact-info">
+          <div class="contact-info__card">
+            <img src="/WhatsApp_Image_2026-06-24_at_5.02.02_PM.jpeg" alt="Edge Cleaning" class="contact-info__logo" />
+            <h3>Edge Cleaning<br>Facility Services</h3>
+            <div class="contact-detail">
+              <span class="contact-detail__icon">📞</span>
+              <div>
+                <strong>Call Us</strong>
+                <a href="tel:+61400000000">+61 400 000 000</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail__icon">✉️</span>
+              <div>
+                <strong>Email Us</strong>
+                <a href="mailto:info@edgecleaning.com.au">info@edgecleaning.com.au</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail__icon">🕒</span>
+              <div>
+                <strong>Working Hours</strong>
+                <span>Mon–Sat: 7:00am – 7:00pm</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail__icon">📍</span>
+              <div>
+                <strong>Service Area</strong>
+                <span>Melbourne & Surrounding Suburbs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="/WhatsApp_Image_2026-06-24_at_5.02.02_PM.jpeg" alt="Edge Cleaning" />
+        <p>Professional cleaning services you can count on. Delivering spotless results with care and reliability.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Residential Cleaning</a></li>
+          <li><a href="#services">Deep Cleaning</a></li>
+          <li><a href="#services">End of Lease</a></li>
+          <li><a href="#services">Commercial Cleaning</a></li>
+          <li><a href="#services">Additional Services</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why-us">Why Choose Us</a></li>
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="#contact">Get a Quote</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+61400000000">+61 400 000 000</a></li>
+          <li><a href="mailto:info@edgecleaning.com.au">info@edgecleaning.com.au</a></li>
+          <li>Mon–Sat: 7am – 7pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>&copy; 2026 Edge Cleaning Facility Services. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#contact" class="fab" id="fab">Get a Quote</a>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
