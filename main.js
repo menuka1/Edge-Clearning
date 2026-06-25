@@ -72,19 +72,45 @@ document.querySelectorAll('.service-card, .feature, .step, .testimonial').forEac
 const form = document.getElementById('contact-form');
 const successMsg = document.getElementById('form-success');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const btn = form.querySelector('button[type="submit"]');
   btn.textContent = 'Sending...';
   btn.disabled = true;
 
-  setTimeout(() => {
+  const payload = {
+    name: document.getElementById('name').value.trim(),
+    phone: document.getElementById('phone').value.trim(),
+    email: document.getElementById('email').value.trim(),
+    service: document.getElementById('service').value,
+    date: document.getElementById('date').value,
+    message: document.getElementById('message').value.trim(),
+  };
+
+  try {
+    const formData = new URLSearchParams();
+    Object.entries(payload).forEach(([key, value]) => formData.append(key, value));
+
+    const response = await fetch('/send-email.php', {
+      method: 'POST',
+      body: formData,
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to send request');
+    }
+
     form.reset();
+    successMsg.textContent = 'Thanks! Your request has been sent.';
     successMsg.classList.add('show');
+  } catch (error) {
+    successMsg.textContent = 'Sorry, something went wrong. Please try again later.';
+    successMsg.classList.add('show');
+  } finally {
     btn.textContent = 'Send Request';
     btn.disabled = false;
     setTimeout(() => successMsg.classList.remove('show'), 5000);
-  }, 1000);
+  }
 });
 
 // Smooth active nav link highlight on scroll
